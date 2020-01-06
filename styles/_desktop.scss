@@ -1,0 +1,53 @@
+@media only screen and (min-width: $desktop) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    nav {
+      // padding: $header-padding-desktop;
+      label {
+        position: absolute;
+      }
+    }
+    input {
+      display: none;
+    }
+    ul {
+      li {
+        display: inline;
+        padding-right: 15px;
+        list-style-type: none;
+        a {
+          color: rgb(0, 0, 0);
+          font-size: 16px;
+          text-decoration: none;
+          font-family: $menu-font;
+        }
+      }
+    }
+  }
+  .fa-bars {
+    visibility: hidden;
+    padding: 20px;
+  }
+  .logo {
+    // padding: $header-padding-desktop;
+    width: 35px;
+    height: auto;
+  }
+
+  div {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    h1 {
+      display: inline;
+      align-self: flex-start;
+      font-size: 64px;
+      color: rgb(6, 10, 36);
+    }
+    .dot {
+      color: rgb(0, 0, 236);
+    }
+  }
+}
