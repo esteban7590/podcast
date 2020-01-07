@@ -1,4 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 @import "styles/_variables.scss";
 @import "styles/_phone.scss";
 @import "styles/_desktop.scss";
-@import "styles/_main.scss";
