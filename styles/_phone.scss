@@ -1,17 +1,14 @@
 @media only screen and (max-width: $phone) {
-  body {
-    font-family: $title-font;
-  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     input {
       display: none;
     }
-    .fa-bars {
+    .icon-container {
       padding: $header-padding-phone;
-      visibility: visible;
     }
     .logo {
       padding: $header-padding-phone;
@@ -38,8 +35,8 @@
         }
       }
     }
-    input:checked ~ .fa-bars {
-      visibility: hidden;
+    input:checked ~ .icon-container {
+      display: none;
     }
     input:checked ~ ul {
       display: block;
@@ -54,6 +51,7 @@
 
       h1 {
         display: inline;
+        font-family: $title-font;
         font-size: $title-font-size;
         font-weight: $title-font-weight;
         color: rgb(6, 10, 36);
@@ -69,10 +67,6 @@
     }
   }
 
-  .button-container {
-    @include button-container;
-  }
-
   .intro {
     padding-top: 16px;
     h2 {
@@ -83,6 +77,10 @@
       line-height: 22px;
       padding-left: $header-padding-phone;
     }
+  }
+
+  .button-container {
+    @include button-container;
   }
 
   .episodios {

@@ -2,52 +2,67 @@
   header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    nav {
-      // padding: $header-padding-desktop;
-      label {
-        position: absolute;
-      }
-    }
-    input {
+    align-items: center;
+    padding-bottom: 120px;
+    input,
+    label {
       display: none;
     }
+    .fa-bars {
+      display: none;
+    }
+    .logo {
+      padding: $header-padding-desktop;
+      width: 35px;
+      height: auto;
+    }
+
     ul {
+      padding: $header-padding-desktop;
       li {
         display: inline;
         padding-right: 15px;
         list-style-type: none;
         a {
           color: rgb(0, 0, 0);
-          font-size: 16px;
+          font-size: $menu-font-size;
           text-decoration: none;
           font-family: $menu-font;
         }
       }
     }
   }
-  .fa-bars {
-    visibility: hidden;
-    padding: 20px;
-  }
-  .logo {
-    // padding: $header-padding-desktop;
-    width: 35px;
-    height: auto;
-  }
-
-  div {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    h1 {
+  .inicio {
+    padding-bottom: 24px;
+    .title {
+      padding-left: $header-padding-desktop;
       display: inline;
-      align-self: flex-start;
-      font-size: 64px;
-      color: rgb(6, 10, 36);
+
+      h1 {
+        display: inline;
+        font-family: $title-font;
+        font-size: $title-font-size;
+        font-weight: $title-font-weight;
+        color: rgb(6, 10, 36);
+      }
+      .dot {
+        color: rgb(0, 0, 236);
+        display: inline;
+      }
+      div {
+        display: inline;
+      }
     }
-    .dot {
-      color: rgb(0, 0, 236);
+  }
+  .intro {
+    padding-top: 16px;
+    h2 {
+      font-size: 14px;
+      font-family: $menu-font;
+      font-weight: 500;
+      color: rgb(6, 10, 36);
+      line-height: 22px;
+      padding-left: $header-padding-desktop;
     }
   }
 }
