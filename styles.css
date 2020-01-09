@@ -247,6 +247,19 @@
       font-weight: 500;
       color: #060a24;
       line-height: 22px;
-      padding-left: 35px; } }
+      padding-left: 35px; }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+    justify-content: flex-start;
+    padding-left: 35px; }
+    .button-container button {
+      padding: 13px 96px;
+      background-color: #00f3bb;
+      font-size: 16px;
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500; } }
 
 /*# sourceMappingURL=styles.css.map */
