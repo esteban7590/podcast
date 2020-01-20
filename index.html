@@ -15,12 +15,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <header>
       <nav>
         <input type="checkbox" id="click" />
-        <label class="icon-container" for="click"><i class="fas fa-bars"></i></label>
+        <label class="bars-container" for="click"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <label class="times-container" for="click"
+          ><i class="fas fa-times"></i
+        ></label>
         <ul>
           <li><a href="#episodios"> EPISODIOS</a></li>
           <li><a href="#nosotros"> NOSOTROS</a></li>
@@ -33,19 +37,14 @@
     <section class="inicio">
       <div class="title">
         <h1>
-          Hello
+          Hello <span><s>world</s></span>
         </h1>
-        <h1><s>world</s>&nbsp</h1>
-        <div>
-          <h1>pale blue dot</h1>
-          <h1 class="dot">.</h1>
-        </div>
+        <h1>pale blue dot<span class="dot">.</span></h1>
       </div>
       <div class="intro">
         <h2>
-          Un podcast que explora el mundo de <br />
-          la programación. Nuevos episodios, <br />
-          todos los jueves cada 15 días.
+          El portal de podcasts que explora el mundo de la programación y la
+          tecnología. Nuevos episodios, todos los jueves cada 15 días.
         </h2>
       </div>
       <div class="button-container">
@@ -70,47 +69,60 @@
       >
         <polygon fill="white" points="0,100 100,0 100,100 200,200 0,200" />
       </svg>
-      <iframe
-        class="spotify"
-        src="https://open.spotify.com/embed-podcast/show/08zQP2peZmM9GrcKShLZvC"
-        height="235"
-        allow="encrypted-media"
-      ></iframe>
-      <iframe
-        class="spotify"
-        src="https://open.spotify.com/embed-podcast/show/37sCdRG1dl6GJrKzRzG9Kn"
-        height="235"
-        allow="encrypted-media"
-      ></iframe>
-      <iframe
-        class="spotify"
-        src="https://open.spotify.com/embed-podcast/show/50XIGcu4u0lh49mK4cPOWy"
-        height="235"
-        allow="encrypted-media"
-      ></iframe>
-      <iframe
-        class="spotify"
-        src="https://open.spotify.com/embed-podcast/show/2PjounY6ksV1eH60lY2jn8"
-        height="235"
-        allow="encrypted-media"
-      ></iframe>
-      <img src="images/phone.png" alt="telefono" id="nosotros" />
+      <div>
+        <div>
+          <iframe
+            class="spotify"
+            src="https://open.spotify.com/embed-podcast/show/08zQP2peZmM9GrcKShLZvC"
+            height="235"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="spotify"
+            src="https://open.spotify.com/embed-podcast/show/37sCdRG1dl6GJrKzRzG9Kn"
+            height="235"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="spotify"
+            src="https://open.spotify.com/embed-podcast/show/50XIGcu4u0lh49mK4cPOWy"
+            height="235"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="spotify"
+            src="https://open.spotify.com/embed-podcast/show/2PjounY6ksV1eH60lY2jn8"
+            height="235"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </div>
     </section>
-    <section class="text">
-      <h1>
-        De dónde <br />
-        venimos
-      </h1>
-      <p>
-        Our posturings, our imagined self-importance, the delusion that we have
-        some privileged position in the Universe, are challenged by this point
-        of pale light. Our planet is a lonely speck in the great enveloping
-        cosmic dark. In our obscurity, in all this vastness, there is no hint
-        that help will come from elsewhere to save us from ourselves.
-      </p>
+    <section class="nosotros">
+      <img src="images/phone.png" alt="telefono" id="nosotros" />
+      <div>
+        <h1>
+          De dónde venimos
+        </h1>
+        <p>
+          Our posturings, our imagined self-importance, the delusion that we
+          have some privileged position in the Universe, are challenged by this
+          point of pale light. Our planet is a lonely speck in the great
+          enveloping cosmic dark. In our obscurity, in all this vastness, there
+          is no hint that help will come from elsewhere to save us from
+          ourselves.
+        </p>
+      </div>
+    </section>
+    <section class="entrevistas">
       <h1 id="entrevistas">
-        Invitadas/os <br />
-        estelares
+        Invitadas/os estelares
       </h1>
       <div class="img-container">
         <img
@@ -132,55 +144,61 @@
           alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer"
         />
       </div>
+    </section>
+    <section class="temas-container">
       <h1 id="temas">
         Algunos de <br />
         nuestros temas
       </h1>
-      <section class="temas-container">
-        <div>
-          <img src="images/icon1.svg" alt="" />
-          <h3>Trabajo remoto</h3>
-        </div>
-        <div>
-          <img src="images/icon2.svg" alt="" />
-          <h3>
-            Repensando la <br />
-            programación
-          </h3>
-        </div>
-        <div>
-          <img src="images/icon3.svg" alt="" />
-          <h3>Bases del código</h3>
-        </div>
-        <div>
-          <img src="images/icon4.svg" alt="" />
-          <h3>Seguridad informática</h3>
-        </div>
-      </section>
-      <section class="action">
-          <h1>¿Quieres las <br> últimas <br> novedades?</h1>
-          <svg
-            class="top-triangle"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-          >
-            <polygon fill="white" points="0,100 0,0 100,0" />
-          </svg> 
- 
-          <div class="button2">
-            <button>ESCUCHA LOS EPISODIOS</button>
-          </div>
-    
-      </section> 
-      <footer>
-        <h4>© 2019— Hello blue pale dot</h4>
-        <div>
-          <a href="https://www.spotify.com/co"><i class="fab fa-spotify"></i></a>
-          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://telegram.org/"><i class="fab fa-telegram-plane"></i></a>
-        </div>
-      </footer>
+      <div>
+        <img src="images/icon1.svg" alt="" />
+        <h3>Trabajo remoto</h3>
+      </div>
+      <div>
+        <img src="images/icon2.svg" alt="" />
+        <h3>
+          Repensando la <br />
+          programación
+        </h3>
+      </div>
+      <div>
+        <img src="images/icon3.svg" alt="" />
+        <h3>Bases del código</h3>
+      </div>
+      <div>
+        <img src="images/icon4.svg" alt="" />
+        <h3>Seguridad informática</h3>
+      </div>
+    </section>
+    <section class="action">
+      <h1>
+        ¿Quieres las <br />
+        últimas <br />
+        novedades?
+      </h1>
+      <svg
+        class="top-tri"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="white" points="0,100 0,0 100,0" />
+      </svg>
+
+      <div class="button2">
+        <button>ESCUCHA LOS EPISODIOS</button>
+      </div>
+    </section>
+    <footer>
+      <h4>© 2019— Hello blue pale dot</h4>
+      <div>
+        <a href="https://www.spotify.com/co"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://telegram.org/"
+          ><i class="fab fa-telegram-plane"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
