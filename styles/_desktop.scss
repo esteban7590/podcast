@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 120px;
+    padding-left: 100px;
     input,
     label {
       display: none;
@@ -13,6 +14,7 @@
     }
     .logo {
       padding: $header-padding-desktop;
+      padding-right: 100px;
       width: 35px;
       height: auto;
     }
@@ -21,7 +23,7 @@
       padding: $header-padding-desktop;
       li {
         display: inline;
-        padding-right: 15px;
+        padding-right: 48px;
         list-style-type: none;
         a {
           color: rgb(0, 0, 0);
@@ -35,13 +37,12 @@
   .inicio {
     padding-bottom: 24px;
     .title {
-      padding-left: $header-padding-desktop;
+      padding-left: $padding-left;
       display: inline;
-
       h1 {
         display: inline;
         font-family: $title-font;
-        font-size: $title-font-size;
+        font-size: 64px;
         font-weight: $title-font-weight;
         color: rgb(6, 10, 36);
       }
@@ -53,16 +54,121 @@
         display: inline;
       }
     }
+
+    .intro {
+      padding-left: $padding-left;
+      width: 580px;
+      h2 {
+        font-size: 14px;
+        font-family: $menu-font;
+        font-weight: 400;
+        color: rgb(6, 10, 36);
+        line-height: 22px;
+      }
+    }
+    .button-container {
+      @include button-container;
+      justify-content: flex-start;
+      padding-left: $padding-left;
+      padding-top: 56px;
+      & :hover {
+        background-image: linear-gradient(to left, #0000fe, #00f0b8);
+      }
+      button {
+        padding: 16px 59px;
+        background-color: rgb(0, 243, 187);
+        font-size: 16px;
+        font-family: $menu-font;
+        font-weight: 500;
+      }
+      & :hover {
+        color: white;
+      }
+    }
   }
-  .intro {
-    padding-top: 16px;
-    h2 {
-      font-size: 14px;
-      font-family: $menu-font;
-      font-weight: 500;
-      color: rgb(6, 10, 36);
-      line-height: 22px;
-      padding-left: $header-padding-desktop;
+  .episodios {
+    @include oblicuo;
+    height: 1040px;
+    margin-bottom: 0px;
+    .section-title {
+      @include title-desktop;
+      color: rgb(255, 255, 255);
+    }
+    .top-triangle {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 10vw;
+    }
+    .bottom-triangle {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 10vw;
+    }
+    div {
+      display: grid;
+      grid-template: 2fr 2fr / 2fr 2fr;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .spotify {
+          padding: 0px 11px 11px 11px;
+          width: 584px;
+        }
+      }
+    }
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -220px;
+    margin-bottom: -220px;
+    padding-left: $padding-left;
+    img {
+      position: relative;
+      padding-top: 37px;
+      width: 457px;
+    }
+    div {
+      h1 {
+        @include title;
+        font-size: 48px;
+        top: -120px;
+        color: rgb(0, 0, 0);
+        padding-top: 50px;
+      }
+      p {
+        width: 464px;
+        padding: 8px $header-padding-phone;
+        font-family: $menu-font;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+      }
+    }
+  }
+  .entrevistas {
+    h1 {
+      @include title;
+      padding-left: $padding-left;
+      padding-bottom: 36px;
+      font-size: 48px;
+    }
+    .img-container {
+      display: grid;
+      grid-template: 2fr 2fr / 3fr 3fr 3fr;
+      padding: 0;
+      padding-bottom: 48px;
+
+      .black-images {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
   .button-container {
