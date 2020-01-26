@@ -1,0 +1,39 @@
+/*Mobile mixins*/
+
+@mixin title {
+  width: 20.57rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.57rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-left: $padding-left-second;
+}
+
+@mixin button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin button_1 {
+  background-color: #00f3bb;
+  font-size: 1.14rem;
+  font-family: $menu-font;
+  font-weight: 500;
+  line-height: 1.57rem;
+}
+
+@mixin oblicuo {
+  position: relative;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+}
+
+/*Desktop mixins*/
+
+@mixin title-desktop {
+  padding-top: 185px;
+  padding-left: $padding-left;
+  padding-bottom: 21px;
+  font-family: $title-font;
+  font-size: 48px;
+  font-weight: $title-font-weight;
+}

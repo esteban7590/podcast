@@ -7,16 +7,13 @@
     <title>Podcast project</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|IBM+Plex+Sans&display=swap"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/0afe6673ce.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header>
+      <img class="logo" src="images/logo.svg" alt="logo" />
       <nav>
         <input type="checkbox" id="click" />
         <label class="bars-container" for="click"
@@ -32,16 +29,23 @@
           <li><a href="#temas"> TEMAS</a></li>
         </ul>
       </nav>
-      <img class="logo" src="images/logo.svg" alt="logo" />
     </header>
     <section class="inicio">
-      <div class="title">
-        <h1>
-          Hello <span><s>world</s></span>
-        </h1>
+      <div class="title_mobile">
+        <h1>Hello <s>world</s></h1>
+        <h1>pale blue dot.</h1>
+      </div>
+      <div class="title_desktop">
+        <h1>Hello <s>world</s></h1>
         <h1>pale blue dot<span class="dot">.</span></h1>
       </div>
-      <div class="intro">
+      <div class="intro_mobile">
+        <h2>
+          Un podcast que explora el mundo de la programación. Nuevos episodios,
+          todos los jueves cada 15 días.
+        </h2>
+      </div>
+      <div class="intro_desktop">
         <h2>
           El portal de podcasts que explora el mundo de la programación y la
           tecnología. Nuevos episodios, todos los jueves cada 15 días.
@@ -52,7 +56,7 @@
       </div>
     </section>
     <section class="episodios">
-      <h1 class="section-title" id="episodios">Episodios</h1>
+      <h1 id="episodios">Episodios</h1>
       <svg
         class="top-triangle"
         xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +109,7 @@
       </div>
     </section>
     <section class="nosotros">
-      <img src="images/phone.png" alt="telefono" id="nosotros" />
+      <img src="images/phone.png" alt="smartphone" id="nosotros" />
       <div>
         <h1>
           De dónde venimos
@@ -113,10 +117,11 @@
         <p>
           Our posturings, our imagined self-importance, the delusion that we
           have some privileged position in the Universe, are challenged by this
-          point of pale light. Our planet is a lonely speck in the great
-          enveloping cosmic dark. In our obscurity, in all this vastness, there
-          is no hint that help will come from elsewhere to save us from
-          ourselves.
+          point of pale light. <br />
+          <br />
+          Our planet is a lonely speck in the great enveloping cosmic dark. In
+          our obscurity, in all this vastness, there is no hint that help will
+          come from elsewhere to save us from ourselves.
         </p>
       </div>
     </section>
@@ -151,22 +156,22 @@
       </h1>
       <div class="temas-container">
         <div>
-          <img src="images/icon1.svg" alt="" />
+          <img src="images/icon1.svg" alt="Trabajo remoto" />
           <h3>Trabajo remoto</h3>
         </div>
         <div>
-          <img src="images/icon2.svg" alt="" />
+          <img src="images/icon2.svg" alt="Repensando la programacion" />
           <h3>
             Repensando la <br />
             programación
           </h3>
         </div>
         <div>
-          <img src="images/icon3.svg" alt="" />
+          <img src="images/icon3.svg" alt="Bases del código" />
           <h3>Bases del código</h3>
         </div>
         <div>
-          <img src="images/icon4.svg" alt="" />
+          <img src="images/icon4.svg" alt="Seguridad informática" />
           <h3>Seguridad informática</h3>
         </div>
       </div>
@@ -197,7 +202,12 @@
         <a href="https://telegram.org/"
           ><i class="fab fa-telegram-plane"></i
         ></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/0afe6673ce.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

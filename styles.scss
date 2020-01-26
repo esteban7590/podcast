@@ -4,6 +4,8 @@
   border: 0;
 }
 
-@import "styles/_variables.scss";
+@import "styles/_variables_phone.scss";
+@import "styles/_variables_desktop.scss";
+@import "styles/_mixins.scss";
 @import "styles/_phone.scss";
 @import "styles/_desktop.scss";
