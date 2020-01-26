@@ -1,10 +1,13 @@
 @media only screen and (min-width: $desktop) {
+  html {
+    font-size: 16px;
+  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 120px;
-    padding-left: 100px;
+    height: 5rem;
+    padding-bottom: 7.5rem;
     input,
     label {
       display: none;
@@ -13,21 +16,19 @@
       display: none;
     }
     .logo {
-      padding: $header-padding-desktop;
-      padding-right: 100px;
-      width: 35px;
+      padding: 1.38rem $padding-left-first-d;
+      width: 2.25rem;
       height: auto;
     }
-
     ul {
-      padding: $header-padding-desktop;
+      padding: 1.63rem $padding-left-first-d;
       li {
         display: inline;
-        padding-right: 48px;
+        padding-left: 3rem;
         list-style-type: none;
         a {
-          color: rgb(0, 0, 0);
-          font-size: $menu-font-size;
+          color: #000000;
+          font-size: $menu-font-size-d;
           text-decoration: none;
           font-family: $menu-font;
         }
@@ -35,16 +36,19 @@
     }
   }
   .inicio {
-    padding-bottom: 24px;
-    .title {
-      padding-left: $padding-left;
+    .title_mobile {
+      display: none;
+    }
+
+    .title_desktop {
+      padding-left: $padding-left-second-d;
       display: inline;
       h1 {
         display: inline;
         font-family: $title-font;
-        font-size: 64px;
-        font-weight: $title-font-weight;
-        color: rgb(6, 10, 36);
+        font-size: 4rem;
+        font-weight: 400;
+        color: #060a24;
       }
       .dot {
         color: rgb(0, 0, 236);
@@ -54,10 +58,12 @@
         display: inline;
       }
     }
-
-    .intro {
-      padding-left: $padding-left;
-      width: 580px;
+    .intro_mobile {
+      display: none;
+    }
+    .intro_desktop {
+      padding: 0 $padding-left-second-d 3.5rem;
+      width: 34rem;
       h2 {
         font-size: 14px;
         font-family: $menu-font;
@@ -69,30 +75,32 @@
     .button-container {
       @include button-container;
       justify-content: flex-start;
-      padding-left: $padding-left;
-      padding-top: 56px;
+      padding-left: $padding-left-second-d;
+      padding-bottom: 0.31rem;
       & :hover {
-        background-image: linear-gradient(to left, #0000fe, #00f0b8);
+        background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8);
       }
       button {
-        padding: 16px 59px;
-        background-color: rgb(0, 243, 187);
-        font-size: 18px;
+        padding: 1rem 3.69rem;
+        background-color: #00f3bb;
+        font-size: 1.13rem;
         font-family: $menu-font;
         font-weight: 500;
+        line-height: 1.5rem;
       }
       & :hover {
-        color: white;
+        color: #ffffff;
       }
     }
   }
   .episodios {
     @include oblicuo;
-    height: 1040px;
-    margin-bottom: 0px;
-    .section-title {
+    height: 67rem;
+    h1 {
       @include title-desktop;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
+      padding-top: 11.63rem;
+      padding-bottom: 1.63rem;
     }
     .top-triangle {
       position: absolute;
@@ -107,15 +115,15 @@
       height: 10vw;
     }
     div {
+      padding: 0 4rem;
       display: grid;
       grid-template: 2fr 2fr / 2fr 2fr;
       div {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
         .spotify {
-          padding: 0px 11px 11px 11px;
-          width: 584px;
+          width: 100%;
+          padding: 2.25rem;
         }
       }
     }
@@ -125,45 +133,42 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    top: -220px;
-    margin-bottom: -220px;
-    padding-left: $padding-left;
+    top: -10.54rem;
+    margin-bottom: -10.54rem;
+    padding: 0 $padding-left-second-d 4rem;
     img {
       position: relative;
-      padding-top: 37px;
-      width: 457px;
+      width: 28.6rem;
     }
     div {
+      padding: 1.28rem 3.5rem;
       h1 {
-        @include title;
-        font-size: 48px;
-        top: -120px;
-        color: rgb(0, 0, 0);
-        padding-top: 50px;
+        @include title-desktop;
+        padding-left: 0;
+        width: 24.94rem;
+        padding-bottom: 1.5rem;
+        color: #000000;
       }
       p {
-        width: 464px;
-        padding: 8px $header-padding-phone;
+        width: 100%;
         font-family: $menu-font;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 300;
-        text-align: justify;
       }
     }
   }
   .entrevistas {
     h1 {
-      @include title;
-      padding-left: $padding-left;
-      padding-bottom: 36px;
+      @include title-desktop;
+      width: 30.06rem;
+      padding-bottom: 2.25rem;
       font-size: 48px;
     }
     .img-container {
       display: grid;
       grid-template: 2fr 2fr / 3fr 3fr 3fr;
       padding: 0;
-      padding-bottom: 48px;
-
+      padding-bottom: 4rem;
       .black-images {
         padding: 0;
         width: 100%;
@@ -172,17 +177,16 @@
   }
   .temas {
     h1 {
-      @include title;
-      padding-left: $padding-left;
-      padding-bottom: 36px;
-      font-size: 48px;
+      @include title-desktop;
+      width: 36.63rem;
+      padding-bottom: 3.5rem;
     }
     .temas-container {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      padding-left: $padding-left;
-      padding-right: $padding-left;
+      align-items: baseline;
+      padding: 0 $padding-left-second-d 2.13rem;
       div {
         display: flex;
         flex-direction: column;
@@ -190,74 +194,72 @@
         justify-content: center;
 
         img {
-          padding-top: 49px;
+          padding: 0.81rem 4.88rem;
         }
         h3 {
-          text-align: center;
           font-family: $title-font;
-          padding-top: 13px;
-          font-size: 24px;
+          text-align: center;
+          color: #060a24;
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding-top: 1rem;
         }
       }
     }
   }
   .action {
     @include oblicuo;
-    height: 550px;
-    h1 {
-      @include title;
-      margin-left: auto;
-      margin-right: auto;
-      padding-bottom: 36px;
-      font-size: 48px;
-      text-align: center;
-      color: white;
-      padding-top: 208px;
-    }
+    height: 32.38rem;
     .top-tri {
       position: absolute;
       top: 0;
       width: 100%;
       height: 10vw;
     }
+    h1 {
+      @include title-desktop;
+      width: 44rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 13.31rem 0 2.25rem;
+      color: #ffffff;
+    }
     .button2 {
       @include button-container;
-      justify-content: center;
-      padding-top: 36px;
       & :hover {
         background-image: linear-gradient(to left, #0000fe, #00f0b8);
       }
       button {
-        padding: 16px 59px;
-        background-color: rgb(0, 243, 187);
-        font-size: 18px;
-        font-family: $menu-font;
-        font-weight: 500;
+        @include button_1;
+        padding: 1rem 3.69rem;
       }
       & :hover {
-        color: white;
+        color: #ffffff;
       }
     }
   }
+
   footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 95px;
+    align-items: baseline;
+    height: 5.94rem;
+    padding: 0 6.25rem;
     h4 {
       font-family: $menu-font;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 300;
+      line-height: 7.75rem;
       text-align: center;
-      padding-left: 100px;
     }
     div {
       display: flex;
       flex-direction: row;
-      padding-right: 100px;
       .fab {
-        padding-left: 36px;
+        padding-left: 2.25rem;
+        color: #060a24;
       }
     }
   }

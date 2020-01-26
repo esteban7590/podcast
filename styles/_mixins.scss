@@ -30,10 +30,10 @@
 /*Desktop mixins*/
 
 @mixin title-desktop {
-  padding-top: 185px;
-  padding-left: $padding-left;
-  padding-bottom: 21px;
-  font-family: $title-font;
-  font-size: 48px;
-  font-weight: $title-font-weight;
+  width: 20.57rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.88rem;
+  padding-left: $padding-left-second-d;
 }
