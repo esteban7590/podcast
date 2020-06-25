@@ -163,7 +163,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: 100%;
+    width: 90%;
     padding-bottom: 1.93rem;
   }
   .nosotros div h1 {
@@ -177,7 +177,7 @@
   }
   .nosotros div p {
     width: 90%;
-    padding: 0 1.14rem 3.86rem;
+    padding: 0 0 3.86rem 1.14rem;
     font-family: "IBM Plex Mono", monospace;
     font-size: 1rem;
     font-weight: 300;
